@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A tribute to Florence Temko and V'Ann Cornelius, founders of the Greater San Diego Origami Group." />
+  <title>Tribute — Greater San Diego Origami Group</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .tribute-hero {
+      background: linear-gradient(135deg, #0f1520 0%, var(--indigo) 100%);
+      padding: 8rem 2rem 5rem;
+      text-align: center;
+    }
+    .tribute-hero h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 300;
+      color: var(--ivory);
+      margin-bottom: 0.5rem;
+    }
+    .tribute-hero p {
+      color: rgba(247,244,238,0.65);
+      font-size: 1.1rem;
+      font-style: italic;
+      font-family: var(--ff-display);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .tribute-quote {
+      background: var(--ivory);
+      padding: var(--space-lg) 0;
+      text-align: center;
+    }
+    .tribute-quote blockquote {
+      font-family: var(--ff-display);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--indigo);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .tribute-quote cite {
+      display: block;
+      margin-top: 1.25rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-style: normal;
+    }
+    .tribute-photo {
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, var(--indigo-mid), var(--indigo));
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.25);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tribute-photo span {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 0.75rem;
+    }
+    .tribute-person {
+      padding: var(--space-xl) 0;
+    }
+    .tribute-person:nth-child(even) { background: var(--ivory); }
+    .tribute-layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .tribute-layout.reverse {
+      grid-template-columns: 1fr 320px;
+    }
+    .tribute-layout.reverse .tribute-photo { order: 2; }
+    .tribute-layout.reverse .tribute-text { order: 1; }
+    .tribute-text h2 {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--indigo);
+      margin-bottom: 0.25rem;
+    }
+    .tribute-text .years {
+      font-size: 0.8rem;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+    .tribute-text p {
+      color: var(--text-mid);
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+      max-width: 580px;
+    }
+    @media (max-width: 768px) {
+      .tribute-layout, .tribute-layout.reverse {
+        grid-template-columns: 1fr;
+      }
+      .tribute-layout.reverse .tribute-photo,
+      .tribute-layout.reverse .tribute-text { order: unset; }
+      .tribute-photo { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav-logo">GSDOG</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#features">Features</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="tribute.html">Tribute</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="tribute-hero">
+    <span class="eyebrow">In Memoriam</span>
+    <h1>Those Who Folded First</h1>
+    <p>"A single sheet of paper, a thousand possibilities."</p>
+  </header>
+
+  <div class="tribute-quote">
+    <div class="container">
+      <blockquote>
+        "They gave us more than a group. They gave us a reason to gather, a language made of folds, and a community that outlived them both."
+        <cite>— The Members of GSDOG</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <section class="tribute-person">
+    <div class="container">
+      <div class="tribute-layout">
+        <div>
+          <!-- Replace with: <img src="../images/florence-temko.jpg" alt="Florence Temko" style="width:100%;border-radius:2px;" /> -->
+          <div class="tribute-photo">◈<span>Photo of Florence</span></div>
+        </div>
+        <div class="tribute-text">
+          <h2>Florence Temko</h2>
+          <span class="years">Co-Founder · Author · Teacher</span>
+          <p>Florence Temko was one of the most prolific and beloved authors in the world of origami and paper crafts. Over the course of her career she wrote more than 60 books — works that introduced origami to generations of children and adults who had never before thought to pick up a square of paper.</p>
+          <p>Her talent was translation: she could take the intimidating geometry of a complex fold and render it warm, clear, and inviting. She understood that origami wasn't just an art form — it was a way of connecting people, of giving hands something meaningful to do, of turning a quiet afternoon into something worth remembering.</p>
+          <p>Florence co-founded the Greater San Diego Origami Group in the early 1990s, bringing her spirit of generosity and accessibility to the local community. Her meetings were welcoming to beginners and experts alike, and she modeled a kind of enthusiasm that proved infectious.</p>
+          <p>We miss her. We fold in her name.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tribute-person">
+    <div class="container">
+      <div class="tribute-layout reverse">
+        <div class="tribute-text">
+          <h2>V'Ann Cornelius</h2>
+          <span class="years">Co-Founder · Curator · Innovator</span>
+          <p>V'Ann Cornelius saw origami as what it has always truly been: art. Her vision helped bring paper folding out of living rooms and into the halls of museums, where it deserved to be seen.</p>
+          <p>She co-curated <em>Origami Masterworks</em>, one of the first major museum-based origami exhibitions anywhere in the world, held at the Mingei International Museum in Balboa Park. The exhibition broke new ground not only in presenting origami as a serious fine art form, but in how that work was displayed — V'Ann's innovations in exhibition design gave the models the dignity and context they deserved.</p>
+          <p>Her reputation extended far beyond San Diego. She was known internationally for her contributions to origami's cultural standing, and her work helped change how the art world understood paper folding.</p>
+          <p>She co-founded this group with Florence, sharing her conviction that origami could be both high art and a communal joy. Both turned out to be true. Both always were.</p>
+        </div>
+        <div>
+          <!-- Replace with: <img src="../images/vann-cornelius.jpg" alt="V'Ann Cornelius" style="width:100%;border-radius:2px;" /> -->
+          <div class="tribute-photo">◇<span>Photo of V'Ann</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tribute-teaser" style="padding: var(--space-xl) 0;">
+    <div class="container" style="text-align:center;">
+      <span class="eyebrow" style="color:var(--gold);">Add to This Page</span>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:300;color:var(--ivory);margin-bottom:1rem;">Honor More Members</h2>
+      <p style="color:rgba(247,244,238,0.65);max-width:500px;margin:0 auto 2rem;line-height:1.8;">
+        This page can hold tributes to any member you'd like to remember. Copy the tribute-person section in the HTML and fill in their story.
+      </p>
+      <a href="contact.html" class="btn-outline-light">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">GSDOG</span>
+        <p>Greater San Diego Origami Group<br>San Diego, California</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="../index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="resources.html">Resources</a>
+        <a href="history.html">History</a>
+        <a href="tribute.html">Tribute</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="footer-copy">© 2025 Greater San Diego Origami Group. Made with paper and care.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

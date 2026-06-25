@@ -38,9 +38,9 @@
 <div class="page-subnav">
     <div class="uk-container">
       <ul class="uk-subnav page-subnav-list">
-        <li><a href="#calendar" class="page-subnav-pill">Calendar</a></li>
-        <li><a href="#bring" class="page-subnav-pill">What to Bring</a></li>
-        <li><a href="#faq" class="page-subnav-pill">FAQ</a></li>
+        <li><a href="#calendar" class="page-subnav-pill" uk-scroll="offset: 20">Calendar</a></li>
+        <li><a href="#bring" class="page-subnav-pill" uk-scroll="offset: 20">What to Bring</a></li>
+        <li><a href="#faq" class="page-subnav-pill" uk-scroll="offset: 20">FAQ</a></li>
       </ul>
     </div>
   </div>
@@ -192,7 +192,7 @@
   </main>
 
 <!-- footer -->
-<div id="footer-placeholder"></div>
+{% include "footer.html" %}
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.0/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.0/dist/js/uikit-icons.min.js"></script>
   <script src="../js/main.js"></script>

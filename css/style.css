@@ -190,7 +190,7 @@ h1,h2,h3,h4 { font-family: var(--ff-display); font-weight: 300; }
 
 /* ---- UIKIT CARD OVERRIDES ---- */
 .uk-card-default {
-  background: var(--gray-200) !important;
+  background: var(--gray-100) !important;
   box-shadow: none !important;
   border: 1px solid var(--gray-300);
 }
@@ -388,9 +388,9 @@ h1,h2,h3,h4 { font-family: var(--ff-display); font-weight: 300; }
   background: var(--gray-800);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   padding: 1rem 0;
-  position: sticky;
+  /* position: sticky;
   top: 60px;
-  z-index: 99;
+  z-index: 99; */
 }
 .page-subnav-list {
   margin: 0;
@@ -401,7 +401,6 @@ h1,h2,h3,h4 { font-family: var(--ff-display); font-weight: 300; }
 .page-subnav-pill {
   display: inline-block;
   padding: 0.4rem 1.1rem;
-  border-radius: 999px;
   border: 1.5px solid rgba(255,255,255,0.2);
   background: transparent;
   color: rgba(255,255,255,0.7) !important;
